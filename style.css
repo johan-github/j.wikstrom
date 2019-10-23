@@ -1,0 +1,87 @@
+/* Orange background color to the top navigation */
+.topNav {
+    background-color: orangered;
+    height: 50px;
+  }
+  /* Style the links inside the navigation bar */
+  .topNav a {
+    float: left;
+    color:brown
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  /* Change the color of links on hover */
+  .topNav a:hover {
+    background-color:lightblue
+    color: darkgreen
+  }
+  /* Add a color to the active/current link */
+  .topNav a.active {
+    background-color:goldenrod
+    color: black
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #ffae00;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: grid;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  /* #dropdownQuizItem:hover {
+    z-index: 4000;
+    background-color: #ffae00;
+    height: auto;
+    width: 180px;
+    display: block;
+    float: none !important;
+    color: #fff;
+    position: absolute;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 0 0 10px 0;
+    -webkit-box-shadow: 3px 3px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.15);
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.15);
+} */
