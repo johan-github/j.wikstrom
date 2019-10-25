@@ -15,12 +15,18 @@ constructor(){
 // Above contains quizes
 
 
-
+class AboutMalmoQuizClass extends Quiz{
+    constructor(){
+        super()
+        this._createQuestion = questionOne(new Quiz);
+        this._createQuestion = questionTwo(new Quiz);
+        this._createQuestion = questionThree(new Quiz);
+    }
+}
 
 // Below contains functions for buttons
 function showAboutMalmoQuiz(){
-    let malmoQuestions ;
-  if (malmoQuestions.style.display === "none") {
+    if (malmoQuestions.style.display === "none") {
     malmoQuestions.style.display = "block";
   } else {
     malmoQuestions.style.display = "none";
@@ -28,6 +34,3 @@ function showAboutMalmoQuiz(){
 }
 // Above contains functions for buttons
 
-class AboutMalmoQuizClass{
-    
-}
