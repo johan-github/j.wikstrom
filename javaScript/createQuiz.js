@@ -1,4 +1,4 @@
-class CreateQuiz extends Main{
+class CreateQuiz extends App{
     constructor(){
         super()
     }

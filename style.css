@@ -97,3 +97,6 @@
   text-align: center;
   font-style: italic;
 }
+#footer{
+  flex-direction: row; 100% /* ??? */
+}
