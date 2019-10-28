@@ -98,5 +98,5 @@
   font-style: italic;
 }
 #footer{
-  flex-direction: row; 100% /* ??? */
+  flex-direction: row; /* ??? */
 }

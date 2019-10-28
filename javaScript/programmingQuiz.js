@@ -1,21 +1,32 @@
-class ProgrammingQuiz extends App{
+class ProgrammingQuiz extends Domer{
+
     constructor(){
         super()
     }
+
+    render(html){
+        return html`
+    <h4>Programming</h4>
+    <h6>This Quiz contains three questions about Programming, <br>Good luck!</h6>
+
+    `
+    }
+
+
     // This is Programming-page 
-    <script src="/javaScript/main.js"></script>
-    <div class="topNav"> <!-- Creates a navigationBar in the top -->
-        <a href="/index.html">Home</a>
+    // <script src="/javaScript/main.js"></script>
+    // <div class="topNav"> <!-- Creates a navigationBar in the top -->
+    //     <a href="/index.html">Home</a>
         
-        <div class="dropdown">
-            <button class="dropbtn">Quiz ...</button>
-            <div class="dropdown-content">
-                <a href="aboutMalmo.html">About Malmö</a>
-                <a href="videoGames.html">Video games</a>
-                <a href="programming.html">Programming</a>
-            </div>
-        </div>
-        <a href="/create.html">Create your own SuperQuiz</a>
-    </div>
-    <h6>About Programming</h6>
+    //     <div class="dropdown">
+    //         <button class="dropbtn">Quiz ...</button>
+    //         <div class="dropdown-content">
+    //             <a href="aboutMalmo.html">About Malmö</a>
+    //             <a href="videoGames.html">Video games</a>
+    //             <a href="programming.html">Programming</a>
+    //         </div>
+    //     </div>
+    //     <a href="/create.html">Create your own SuperQuiz</a>
+    // </div>
+    // <h6>About Programming</h6>
 }

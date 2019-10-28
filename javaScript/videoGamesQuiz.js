@@ -1,7 +1,21 @@
-class VideoGamesQuiz extends App{
+class VideoGamesQuiz extends Domer{ 
+
     constructor(){
         super()
+
     }
+
+    render(html){
+        return html`
+    <h4>Video Games</h4>
+    <h6>This Quiz contains three questions about Video Games, <br>Good luck!</h6>
+    
+    `
+    }
+
+
+
+
     // This is Video Games-page
     // <script src="/javaScript/main.js"></script>
     // <div class="topNav"> <!-- Creates a navigationBar in the top -->
