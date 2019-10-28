@@ -17,18 +17,18 @@ class App extends Domer {
 
           ${this.topNav}
 
-          ${route('/home') ? this.home : ''}
+          ${route('/') ? this.home : ''}
           ${route('/aboutMalmoQuiz') ? this.aboutMalmoQuiz : ''}
           ${route('/videoGamesQuiz') ? this.videoGamesQuiz : ''}
           ${route('/programmingQuiz') ? this.programmingQuiz : ''}
           ${route('/createQuiz') ? this.createQuiz : ''}
           ${route(404) ? this.missingPage : ''}
 
-          <footer id="footer">&copy; 2019 SuperQuiz </footer>
-        
+            <div id="divFooter">
+              <footer id="footer"> 2019 SuperQuiz </footer>
+            </div>
       </section>
     `
   }
 }
-
 new App()

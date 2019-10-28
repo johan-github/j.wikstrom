@@ -14,11 +14,11 @@ class TopNav extends Domer{
                 <div class="dropdown-content">
                 <!-- Three rows below: link to page + page-name -->
                 <a href="/aboutMalmoQuiz">About Malmö</a>
-                <a href="/VideoGamesQuiz.js">Video games</a>
-                <a href="/ProgrammingQuiz.js">Programming</a>
+                <a href="/videoGamesQuiz">Video games</a>
+                <a href="/programmingQuiz">Programming</a>
                 </div>
             </div>
-        <a href="/Create.js">Create your own SuperQuiz</a>
+        <a href="/Create">Create your own SuperQuiz</a>
     </div>
 </section>
 `

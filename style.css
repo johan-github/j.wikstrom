@@ -78,7 +78,7 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-/* Pictures below this point */
+/* Picture(s) below this point ----------------------- */
 #superQuiz-logo{
   width: 500px;
   height: 250px;
@@ -86,7 +86,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* Pictures above this point */
+/* Pictures above this point ----------------------- */
 
 /* Text below this point */
 #firstText{
@@ -98,5 +98,15 @@
   font-style: italic;
 }
 #footer{
-  flex-direction: row; /* ??? */
+  flex-direction: row;
+  text-align: center;
+  font-style: oblique;
+  display: flex;
+  min-height: 20vh;
+  flex-direction: column;
 }
+#divFooter{
+  flex: 1;
+}
+
+
