@@ -7,17 +7,29 @@ class AboutMalmoQuiz extends Domer{
         /* this.button.onclick = () => { this.showAboutMalmoQuiz() } */
     }
 
+    startAboutMalmoQuiz(){
+        
+    }
+
     render(html){
         return html`
         <section>
+
             <h4>About Malmö</h4>
             <h6>This Quiz contains three questions about Malmö, <br> a beautiful city in the south region of Sweden. <br> Good luck!</h6>
-            <button id="startAboutMalmoQuiz" type="button">Start "About Malmö" Quiz</button>
+            <br><br>
+            <button id="startAboutMalmoQuiz" onclick="startAboutMalmoQuiz()" type="button">Start "About Malmö" Quiz</button>
+            
         </section>
+        <br>
+
+        <div id="malmoQuiz">
+          Question 1: How many people live in Malmö city?
+          Question 2: What is "Turning Torso"?
+          Question 3: How far is it to Stockholm, the capital of Sweden, from Malmö?
+        </div>
     `
     }
-    // }
-
 // function myFunction() {
 //    let hidingQuestions = document.getElementById("myDIV");
 //     if (hidingQuestions.style.display === 'none') {

@@ -15,11 +15,3 @@ class ProgrammingQuiz extends Domer{
         `
     }
 }
-
-
-
-    // This is Programming-page 
-    // <script src="/javaScript/main.js"></script>
-    // <div class="topNav"> <!-- Creates a navigationBar in the top -->
-    //     <a href="/index.html">Home</a>
-  
