@@ -18,7 +18,7 @@ class TopNav extends Domer{
                 <a href="/programmingQuiz">Programming</a>
                 </div>
             </div>
-        <a href="/Create">Create your own SuperQuiz</a>
+        <a href="/createQuiz">Create your own SuperQuiz</a>
     </div>
 </section>
 `

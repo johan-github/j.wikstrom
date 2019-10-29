@@ -1,10 +1,16 @@
 class App extends Domer {
 
-  aboutMalmoQuiz = new AboutMalmoQuiz()
-  videoGamesQuiz = new VideoGamesQuiz()
-  programmingQuiz = new ProgrammingQuiz()
-  createQuiz = new CreateQuiz()
+  aboutMalmoQuiz = new Quiz("Please answer the questions below about Malmö")
+  // aboutMalmoQuiz.addQuestion(new Question("Vad heter isstadion i Malmö", "Malmö Arena"));
+
+  // videoGamesQuiz = new Quiz()
+
+  // programmingQuiz = new Quiz()
+
+  // createQuiz = new Quiz()
+
   topNav = new TopNav()
+
   home = new Home()
 
   constructor(){
@@ -17,7 +23,8 @@ class App extends Domer {
 
           ${this.topNav}
 
-          ${route('/') ? this.home : ''}
+          ${route('/') ? this.home : ''} <!-- Takes user to home page with Home button in nav -->
+          ${route('/index.html') ? this.home : ''} <!-- Needed when open live server for the first time -->
           ${route('/aboutMalmoQuiz') ? this.aboutMalmoQuiz : ''}
           ${route('/videoGamesQuiz') ? this.videoGamesQuiz : ''}
           ${route('/programmingQuiz') ? this.programmingQuiz : ''}

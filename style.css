@@ -97,16 +97,15 @@
   text-align: center;
   font-style: italic;
 }
-#footer{
+#divFooter{
   flex-direction: row;
   text-align: center;
   font-style: oblique;
   display: flex;
   min-height: 20vh;
   flex-direction: column;
-}
-#divFooter{
   flex: 1;
-}
+} 
+
 
 
