@@ -1,31 +1,46 @@
+// THIS CLASS REPRESENT A LIST OF QUESTIONS. ALSO INCLUDE A SUBJECT-SELECTION AND ADDING NEW QUESTION INTO LIST.
+
 class Quiz extends Domer{
     
-    questions = [];
-    subject;
-    addQuestion;
+    // questions = [];
+    // subject;
+    // addQuestion;
 
-    constructor(questions, subject, addQuestion){
+    // These props are inhereted from the instance that is created in app.js
+    constructor(questions, subject, extraQuestion){
         super()
         this.questions = questions;
         this.subject = subject;
-        this.addQuestion = addQuestion;
+        this.extraQuestion = extraQuestion;
+        // Pushes an additional question which is inherited from app.js as we create a new quiz
+        this.addExtraQuestion(this.extraQuestion);
     }
-    // function below takes array and pushes in new question \\
-    newFunction(){
-        this.questions.push = this.addQuestion;
-    }
-    
-    
-    render(html){
-        return html`
-        <section>
-            <h3> What do you know about Malmö?</h3>
 
+    // This array pushes a question to the defined quiz
+    addExtraQuestion(extraQuestion){
+        this.questions.push(extraQuestion);
+    }
+
+    getQuestions() {
+        // console.log(this.questions);
         
-            
-        </section>
-        <br>
-    `
+
+        // return [qOld, qLiving, qName];
     }
     
+    //Beräkna slutresultat och färga svaren
+    getResult(){
+        let score = 0;
+        // run through list of questions
+        for (let question of this._questions){
+            //Kolla om ordet har rätt svar...
+            let isCorrectAnswer = question.isCorrectAnswer();
+
+            // If answer is Correct, raise score by ONE
+            if (isCorrectAnswer){
+                points++;
+            }
+        }
+        return points;
+    }
 }
