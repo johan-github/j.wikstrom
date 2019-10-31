@@ -5,6 +5,7 @@ class Quiz extends Domer{
     // questions = [];
     // subject;
     // addQuestion;
+    // Might not need above variables...
 
     // These props are inhereted from the instance that is created in app.js
     constructor(questions, subject, extraQuestion){
@@ -14,12 +15,16 @@ class Quiz extends Domer{
         this.extraQuestion = extraQuestion;
         // Pushes an additional question which is inherited from app.js as we create a new quiz
         this.addExtraQuestion(this.extraQuestion);
+        // this.removeExtraQuestion(this.extraQuestion);
     }
 
     // This array pushes a question to the defined quiz
     addExtraQuestion(extraQuestion){
         this.questions.push(extraQuestion);
     }
+    // removeExtraQuestion(extraQuestion){
+        // this.extraQuestion.pop(extraQuestion);
+    // }
 
     getQuestions() {
         // console.log(this.questions);

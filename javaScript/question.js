@@ -14,19 +14,18 @@ class Question extends Domer{
     }
 
     isCorrectAnswer(){
-        return this.answer === this.correctAnswer;
+        return this.userAnswer.value === this.correctAnswer;
     }
 
     render(html){
         return html`
     <section>
-        <!-- The Question. Invisable until "get" by ID -->
-        <h3 id="theVeryQuestion"></h3>
+        <!-- theVeryQuestion below. Invisable until "get" by ID -->
+        <!-- <h3 id="theVeryQuestion"></h3> -->
 
         <!-- Input-box for user, bound to variable "userAnswer". Bind to isCorrectAnswer ?? -->
-        <input type="text" id="theVeryAnswer" bind="userAnswer" placeholder="Enter your answer">
+        <!-- <input type="text" id="theVeryAnswer" bind="userAnswer" placeholder="Enter your answer"> -->
     </section>
     `
     }
-        
 }
