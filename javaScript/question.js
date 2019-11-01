@@ -2,20 +2,21 @@
 
 class Question extends Domer{ 
 
-    question = "";
-    userAnswer = "";
-    correctAnswer = "";
+    // question = "";
+    // userAnswer = "";
+    // correctAnswer = "";
 
     constructor(question, userAnswer, correctAnswer){
         super();
-        this.question = question;
-        this.userAnswer = userAnswer;
-        this.correctAnswer = correctAnswer;
+        // The three rows below is not needed right now.
+        // this.question = question;
+        // this.userAnswer = userAnswer;
+        // this.correctAnswer = correctAnswer;
     }
 
-    isCorrectAnswer(){
-        return this.userAnswer.value === this.correctAnswer;
-    }
+    // isCorrectAnswer(){ // Planed to use this as a function for future possibility, to check if a answer is true/false.
+    //     return this.userAnswer.value === this.correctAnswer; //Bolean checks true/false
+    // }
 
     render(html){
         return html`

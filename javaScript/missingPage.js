@@ -1,8 +1,6 @@
-class MissingPage extends Domer{
+class MissingPage{
 
-    missingPage = "";
-
-    constructor(){
-        super()
+    constructor(missingPage){
+        this.missingPage = missingPage;
     }
 }

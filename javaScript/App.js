@@ -1,44 +1,38 @@
 class App extends Domer {
 
-  // aboutMalmoQuiz = new Quiz("Please answer the questions below about Malmö")
-  // aboutMalmoQuiz.addQuestion(new Question("Vad heter isstadion i Malmö", "Malmö Arena"));
-  // myQuestions = new Quiz().aboutYouQuiz();
-  // console.log(myQuestions);
-  
-  // console.log("Here: ", myQuestions);
-  
-  // videoGamesQuiz = new Quiz()
+  // OBS! THIS PROJECT USES PUBLIC ATTRIBUTES. THERE IS A POSSIBILITY TO USE PRIVATE ATTRIBUTES BY...
+  // WRITING UNDERSCORE (_) BEFORE THE ATTRIBUTE-NAME. IF SO, WE GET (CALL ON) THE ATTRIBUTES BY...
+  // PRINTING "THIS_VARIABLENAME = VARIABLENAME" IN THE REQUESTED CLASS CONSTRUCTOR.
 
-  // programmingQuiz = new Quiz()
-
-  // createQuiz = new Quiz()
-  missingPage = new MissingPage();
-
+  aboutMalmoQuiz = new AboutMalmoQuiz()
+  programmingQuiz = new ProgrammingQuiz()
+  videoGamesQuiz = new VideoGamesQuiz()
+  createQuiz = new CreateQuiz()
+  pageMissing = new MissingPage();
   topNav = new TopNav();
-
   home = new Home();
 
-  
-  listOfStuff = [];
+  listOfStuff = []; // Empty array that can be filled with values.
 
   constructor(){
     super()
-
+    
+    // quizInstance is filled with the content from class Quiz. Quiz requires three elements.
     this.quizInstance = new Quiz
     (["What is 'Turning Torso'?", "What can you find on 'Amiralsgatan 20'?", "How many wakeboarding-parks is there in Malmö?"]);
-    
-    console.log("Here is the quiz instance: ", this.quizInstance);
+    console.log("Here is the quiz instance: ", this.quizInstance); // shows the quiz instance.
   }
 
-  submitButton(){ // Pushes new content into array
+  submitButton(){ // Function that pushes new content into array, bound to Submit-button
     this.listOfStuff.push(this.inputName);
     console.log(this.listOfStuff);
-    
   }
-  removeContent(){ // Pops out (remove) content from array
+
+  removeContent(){ // Pops out (remove) content from array, bound to Remove-button
     this.listOfStuff.pop(this.inputName);
-    console.log(this.listOfStuff);
+    console.log(this.listOfStuff); 
   }
+
   renderContent(){ //Prints out content in DOM-format
     let printOut = "";
     for (let stuff of this.listOfStuff){
@@ -64,32 +58,28 @@ class App extends Domer {
           ${route('/programmingQuiz') ? this.programmingQuiz : ''}
           ${route('/createQuiz') ? this.createQuiz : ''}
           ${route(404) ? this.missingPage : ''}
-          <!-- ${this.quizInstance} -->
+
           <br>
 
-          Add your name: <input type="text" placeholder="Write your name" bind="inputName"><br>
+
+
+
+
+
+          <!-- Below is working properly
+          Add something to the list: <input type="text" placeholder="Write something" bind="inputName"><br><br>
           <button click="submitButton">Submit</button>
           <br><br>
-          <button click="removeContent"> Remove </button>
-          ${this.renderContent()}
-
-              <!-- Below div-tag shows a number of objects created by constructor above.
-              <div id="aboutMalmoQuizDiv" bind="aboutMalmoQuiz">
-              ${this.quizInstance.questions[0]}
-                <input type="text">
-                <br><br>
-              ${this.quizInstance.questions[1]}
-                <input type="text">
-                <br><br>
-              ${this.quizInstance.questions[2]}
-                <input type="text">
-              </div> -->
+          <button click="removeContent"> Remove one item per click </button>
+          ${this.renderContent()} ///// Function that render content called "stuff" (see above)
+          -->
 
             <!-- Below row, uses addExtraQuestion, a function from class Quiz, to push in additional question -->
-            <!-- See console.log as index #4 -->
-            ${this.quizInstance.addExtraQuestion("How are you today?")}
+            ${this.quizInstance.addExtraQuestion("How are you today?")} <!-- See console.log as index #4 -->
                           
             <h1>${this.quizInstance.subject}</h1>
+            
+            <br>
 
             <div id="divFooter">
               <footer id="footer"> 2019 SuperQuiz </footer>
