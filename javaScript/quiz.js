@@ -1,23 +1,37 @@
-// THIS CLASS REPRESENT A LIST OF QUESTIONS. ALSO INCLUDE A SUBJECT-SELECTION AND ADDING NEW QUESTION INTO LIST.
-
 class Quiz extends Domer{
     
-    // questions = [];
-    // subject;
+    _questions = [];
+    _topic;
+    _extraQuestion;
     // addQuestion;
-    // Might not need above variables...
+    // Variables shown above is not needed but makes it more clear of what's in use.
 
-    // These props are inhereted from the instance that is created in app.js
-    constructor(questions, subject, extraQuestion){
+    // These props are inhereted from the instance that is created in App.js
+    constructor(questions, topic, extraQuestion){
         super()
-        this.questions = questions;
-        this.subject = subject;
-        this.extraQuestion = extraQuestion;
+        this._questions = questions;
+        this._topic = topic;
+        this._extraQuestion = extraQuestion;
         // Pushes an additional question which is inherited from app.js as we create a new quiz
-        this.addExtraQuestion(this.extraQuestion);
-    }
-    // This array pushes a question to the defined quiz
-    addExtraQuestion(extraQuestion){
-        this.questions.push(extraQuestion);
+        // this.addExtraQuestion(this.extraQuestion);
     }
 }
+    // This function pushes a question to the List (array) "questions"
+    /*addExtraQuestion(extraQuestion){
+        this.questions.push(extraQuestion);}*/
+    
+    /*addQuestion(question, answer, topic){
+            let newMalmo = new AboutQuiz(question, answer, topic);
+            this.questions.push(newMalmo);
+    }
+    writeQuestions(topic){
+        let quizList = [];
+        for(let quiz in this.questions){
+            if(this.quiz.getTopic() == topic){
+                quizList.push(quiz);
+            }
+        }
+        return quizList;
+    }
+    */
+

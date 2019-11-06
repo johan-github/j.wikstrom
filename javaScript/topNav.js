@@ -1,9 +1,5 @@
 class TopNav extends Domer{
 
-    constructor(){
-        super()
-    }
-
     render(html){
         return html`
 <section>
@@ -12,7 +8,7 @@ class TopNav extends Domer{
             <div class="dropdown">
                 <button class="dropbtn">Quiz ...</button>
                 <div class="dropdown-content">
-                <!-- Three rows below: link to page + page-name -->
+                <!-- Three rows below: link to content -->
                 <a href="/aboutMalmoQuiz">About Malmö</a>
                 <a href="/videoGamesQuiz">Video games</a>
                 <a href="/programmingQuiz">Programming</a>
@@ -23,6 +19,5 @@ class TopNav extends Domer{
 </section>
 `
 }
-
 
 }
