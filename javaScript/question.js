@@ -1,24 +1,20 @@
-// THIS CLASS REPRESENT A QUESTION, AN ANSWER AND CHECKING IF ANSWER IS CORRECT OR NOT
+// THIS CLASS REPRESENT A QUESTION
 
-class Question {
+class Question extends Domer {
 
-    //question = "";
-    //answer = "";
-    //topic = "";
-
-    //constructor(question, answer, topic){
-        // this.question = question;
-        // this.answer = answer;
-        // this.topic = topic;
-    // }
-
-    render(html){
-        return html`
-    <section>
-        <div>
-        
-        </div>
-    </section>
-    `
+    _quizQuestion = '';
+    _userAnswer = '';
+    _quizAnswer = '';
+    
+    constructor(quizQuestion, userAnswer, ) {
+        super();
+        this._quizQuestion = quizQuestion;
+        this._quizAnswer = userAnswer;   
     }
+
+    // Check if answer from user is correct with real answer
+    checkAnswer(){
+        return this._userAnswer === this._quizAnswer;
+    }
+
 }

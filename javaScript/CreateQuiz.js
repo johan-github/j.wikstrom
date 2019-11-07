@@ -1,8 +1,10 @@
 class CreateQuiz extends Domer{
+
+
     constructor(){
     super()
-
     }
+
 
     render(html){
         return html`
@@ -14,5 +16,4 @@ class CreateQuiz extends Domer{
         
         `
     }
-
 }
