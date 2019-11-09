@@ -14,7 +14,6 @@ class App extends Domer {
 
   constructor() {
     super();
-
   }
 
 // The render below converts js-codes into html. This (app) is still a js-file.

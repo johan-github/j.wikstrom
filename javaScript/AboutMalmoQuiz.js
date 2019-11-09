@@ -1,14 +1,12 @@
 class AboutMalmoQuiz extends Domer { 
     
     _correctAnswer = "tower";
-    // _question = "";
     _userAnswer;
     _listOfQuestions = [];
-    // thisQuestionList = new QuizList();
-
-    constructor() { // _correctAnswer
+    
+    constructor(quizList) {
     super()
-    // this._correctAnswer = _correctAnswer;
+    this.quizList = quizList;
 }
 
     submitMalmoButton() {
@@ -17,7 +15,7 @@ class AboutMalmoQuiz extends Domer {
         return
         }
 
-        emptyInputField(){ // This works. Also remove "${this._userAnswer}" in DOM (below).
+        emptyInputField(){ // Removes input from user and "${this._userAnswer}" in DOM (below).
         this._userAnswer = "";       
     }
 
@@ -33,9 +31,10 @@ class AboutMalmoQuiz extends Domer {
             
             <button click="submitMalmoButton" type="button"> Submit answer </button>
             <button click="emptyInputField" type="button"> Empty input field </button> 
-            <h4 id="showRightAnswer">Your answer: ${this._userAnswer} <br> </h4>  <!-- Correct answer: ${this._correctAnswer} -->
+            <h4 id="showRightAnswer">Your answer: ${this._userAnswer} <br> </h4> <br>
+            <h6>Want to reset? Press "F5" to reset game completley. </h6>
         </section>
-                <!--  -->
+                
         `
     }
 

@@ -2,7 +2,7 @@ class QuizList extends Domer {
 
     _listOfQuestions = [];
 
-    newQuestion = new Question("glass?", "");
+    newQuestion = new Question();
 
     constructor(){
         super();
@@ -17,8 +17,4 @@ class QuizList extends Domer {
     getListOfQuestions(){
         return this._listOfQuestions.length;
     }
-
-    
-
-    
 }
