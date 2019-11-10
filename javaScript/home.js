@@ -1,7 +1,5 @@
 class Home extends Domer{
-    constructor(){
-        super()
-    }
+
     render(html){
         return html`
         <section>

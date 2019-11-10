@@ -1,11 +1,8 @@
 class VideoGamesQuiz extends Domer{
 
     _correctAnswer = "super mario";
-    // _question = "";
     _userAnswer;
-    _listOfQuestions = [];
-    // thisQuestionList = new QuizList();
-
+    
     submitVideoGamesButton() {
         // Check if answer is true coparred with real answer
         (this._userAnswer === this._correctAnswer) ? console.log("Correct answer!" + " " + this._userAnswer) : console.log("Too bad, that is incorrect. Correct answer is:" + " " + this._correctAnswer);

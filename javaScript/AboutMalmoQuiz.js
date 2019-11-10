@@ -2,7 +2,6 @@ class AboutMalmoQuiz extends Domer {
     
     _correctAnswer = "tower";
     _userAnswer;
-    _listOfQuestions = [];
 
     submitMalmoButton() {
         // Check if answer is true coparred with real answer

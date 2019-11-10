@@ -20,7 +20,7 @@ class CreateQuiz extends Domer{
         }
         else{
         this._createQuizList.push(this._quizQuestion, this._quizAnswer);
-        console.log(this._createQuizList);
+            console.log(this._createQuizList);
         }
     }
 
@@ -28,12 +28,13 @@ class CreateQuiz extends Domer{
         this._quizQuestion = "";
         this._quizAnswer = "";
     }
-
+    //${this._createQuizList[QuizList]} render won't read this... (made for "List: " below.)
     render(html){
         return html`
         <section>
 
             <h1>Under construction</h1>
+            
             <input type="text" bind="_quizQuestion" placeholder="Enter a question">
             <input type="text" bind="_quizAnswer" placeholder="Enter an answer">
             <br><br>
@@ -41,7 +42,10 @@ class CreateQuiz extends Domer{
             <button click="resetButtonCreateQuiz" type="button">Reset</button>
             <br><br>
             <button click="startButtonCreateQuiz" type="button">Start Quiz</button>
+            <br><h3>List: ${this._createQuizList[QuizList]}</h3>
             
+            <br>
+            <h6>Want to reset? Press "F5" to reset game completley. </h6>
         </section>
         
         `

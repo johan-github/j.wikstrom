@@ -1,10 +1,7 @@
 class ProgrammingQuiz extends Domer{
     
     _correctAnswer = "one line code";
-    // _question = "";
     _userAnswer;
-    _listOfQuestions = [];
-    // thisQuestionList = new QuizList();
 
     submitProgrammingButton() {
         // Check if answer is true coparred with real answer
@@ -23,9 +20,9 @@ class ProgrammingQuiz extends Domer{
             <h1>Programming</h1>
             
             <h4>What does "ternary operator" mean?</h4><br>
-            <h4>It's a...</h4>
+            <h5>It's a...</h5>
             
-            <input type="text" bind="_userAnswer"><br>
+            <input type="text" bind="_userAnswer"><br><br>
             
             <button click="submitProgrammingButton" type="button"> Submit answer </button>
             <button click="emptyInputField" type="button"> Empty input field </button> 
