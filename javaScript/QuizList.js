@@ -1,13 +1,12 @@
+// THIS CLASS REPRESENT A LIST. THIS LIST CONTAINS CONTENT FROM CLASS "QUESTION"
+// THIS LIST WILL BE PICKED UP BY "CREATEQUIZ.JS".
+
 class QuizList extends Domer {
 
     _listOfQuestions = [];
 
-    constructor(listOfQuestions){
-        super();
-        this._listOfQuestions = listOfQuestions;
-    }
     pushQuestionIntoList(){
-        this._listOfQuestions.push(new Question(quizQuestion, quizAnswer, userAnswer));
+        this._listOfQuestions.push(new Question(this));
         return this._listOfQuestions;
     }
 }

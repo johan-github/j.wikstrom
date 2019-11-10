@@ -10,7 +10,8 @@ class AboutMalmoQuiz extends Domer {
         return;
         }
 
-        emptyInputField(){ // Removes input from user and "${this._userAnswer}" in DOM (below).
+        // Removes input from user and "${this._userAnswer}" in DOM (below).
+        emptyInputField(){ 
         this._userAnswer = "";       
     }
 

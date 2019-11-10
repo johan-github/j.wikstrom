@@ -6,17 +6,12 @@ class App extends Domer {
   createQuiz = new CreateQuiz()
   topNav = new TopNav();
   home = new Home();
-  // quizList = new QuizList();
-  // question = new Question();
-  
-  _quizQuestion = '';
-  _answerQuestion = '';
 
   constructor() {
     super();
   }
 
-// The render below converts js-codes into html. This (app) is still a js-file.
+// The render below makes it possible to write in html-format. This (App.js) is still a js-file.
   render(html, route) {  
     return html`
       <section>
@@ -40,11 +35,3 @@ class App extends Domer {
   }
 }
 new App()
-
-
-// Below is working properly
-//Add something to the list: <input type="text" placeholder="Write something" bind="inputName"><br><br>
-//<button click="submitButton">Submit</button>
-//<br><br>
-//<button click="removeContent"> Remove one item per click </button>
-//-->

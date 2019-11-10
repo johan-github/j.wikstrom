@@ -1,4 +1,5 @@
-// THIS CLASS REPRESENT A QUESTION
+// THIS CLASS REPRESENT A QUESTION, AN ANSWER AND A USER_ANSWER
+// THIS WILL BE PICKED UP BY "QUIZLIST.JS".
 
 class Question extends Domer {
 
@@ -15,17 +16,5 @@ class Question extends Domer {
         this._quizAnswer = quizAnswer;
         this._userAnswer = userAnswer;
     }
-
-    
-/*
-    render(html){
-        return html`
-        <section>
-        
-        </section>
-        
-        ´
-    }
-*/
 }
 
