@@ -9,7 +9,7 @@ class VideoGamesQuiz extends Domer{
     submitVideoGamesButton() {
         // Check if answer is true coparred with real answer
         (this._userAnswer1 === this._correctAnswer1) ? console.log("Correct answer!" + " " + this._userAnswer1) : console.log("Too bad, that is incorrect. Correct answer is:" + " " + this._correctAnswer1);
-        return
+        return;
         }
 
         emptyInputField1(){ 
@@ -28,7 +28,7 @@ class VideoGamesQuiz extends Domer{
             
             <button click="submitVideoGamesButton" type="button"> Submit answer </button>
             <button click="emptyInputField1" type="button"> Empty input field </button> 
-            <h4 id="showRightAnswer">Your answer: ${this._userAnswer1} <br> </h4><br>
+            <h4>Your answer: ${this._userAnswer1} <br> </h4><br>
             <h6>Want to reset? Press "F5" to reset game completley. </h6>
         </section>
                 

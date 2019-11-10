@@ -6,8 +6,8 @@ class App extends Domer {
   createQuiz = new CreateQuiz()
   topNav = new TopNav();
   home = new Home();
-  quizList = new QuizList();
-  question = new Question();
+  // quizList = new QuizList();
+  // question = new Question();
   
   _quizQuestion = '';
   _answerQuestion = '';

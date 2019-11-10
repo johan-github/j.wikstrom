@@ -2,19 +2,12 @@ class QuizList extends Domer {
 
     _listOfQuestions = [];
 
-    newQuestion = new Question();
-
-    constructor(){
+    constructor(listOfQuestions){
         super();
+        this._listOfQuestions = listOfQuestions;
     }
-
-    // Add new question to the list of questions
-    add(newQuestion){
-        this._listOfQuestions.push(newQuestion);
-    }
-
-    // Get list of questions
-    getListOfQuestions(){
-        return this._listOfQuestions.length;
+    pushQuestionIntoList(){
+        this._listOfQuestions.push(new Question(quizQuestion, quizAnswer, userAnswer));
+        return this._listOfQuestions;
     }
 }
